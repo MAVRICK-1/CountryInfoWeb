@@ -1,0 +1,149 @@
+body {
+    --background-color: white;
+    --text-color: black;
+    --elements-color: white;
+    margin: 0;
+    font-family: Nunito, sans-serif;
+}
+
+main{
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+main.dark {
+    --background-color: hsl(207, 26%, 17%); 
+    --text-color: white;
+    --elements-color: hsl(209, 23%, 22%);
+}
+.team-item-dark{
+    background-color: var(--elements-color);
+}
+main {
+    padding: 24px;
+    min-height: calc(100vh - 100px);
+}
+.section-white {
+	
+	padding: 70px 0;
+}
+
+.team-item,.team-item-dark{
+	text-align:center;
+	margin:20px 0;
+    box-shadow: 0 2px 4px 0px rgba(0, 0, 0, 0.1);
+	padding:50px 20px 40px 20px;
+	border-radius: 8px 8px;
+	-webkit-transition: all 0.25s ease-in-out;
+	-moz-transition: all 0.25s ease-in-out;
+	-ms-transition: all 0.25s ease-in-out;
+	-o-transition: all 0.25s ease-in-out;
+	transition: all 0.25s ease-in-out;
+}
+.team-item{
+   background-color: #f4f5f6;
+}
+
+.team-item:hover,.team-item-dark:hover{
+	background: #3956de;
+	
+}
+
+.team-item h3,.team-item-dark h3{
+	margin:20px 0 1px 0!important;
+	
+	font-size:18px;
+	font-weight: 700;
+	text-transform:uppercase;
+	transition: all .25s ease-in-out;
+	-moz-transition: all .25s ease-in-out;
+	-webkit-transition: all .25s ease-in-out;
+}
+
+.section-subtitle {
+	white-space: pre-line;
+ }
+
+.team-item:hover h3,.team-item-dark:hover h3{
+	color:#ddd;
+}
+
+.team-info {
+	display: block;
+	margin-bottom:0;
+}
+
+.team-info p{
+	
+	font-style:italic;
+}
+
+.team-info::after {
+    background: #008aff;
+    background: -webkit-linear-gradient(135deg, #6B02FF 0%, #985BEF 100%);
+    background: -o-linear-gradient(bottom right, #6B02FF, #985BEF);
+    background: -moz-linear-gradient(bottom right, #008aff, #1ad2fd);
+    background: linear-gradient(135deg, #6B02FF 0%, #985BEF 100%);
+    display: inline-block;
+    vertical-align: middle;
+    content: "";
+    width: 50px;
+    height: 3px; 
+}
+
+.team-img{
+	max-width: 140px;
+	padding: 6px 6px;
+   
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+}
+
+ul.team-icon {
+	margin-top: 25px;
+}
+
+ul.team-icon li{
+	display: inline-block;
+	margin:0 3px;
+	-webkit-transition: all 0.25s ease-in-out;
+	-moz-transition: all 0.25s ease-in-out;
+	-ms-transition: all 0.25s ease-in-out;
+	-o-transition: all 0.25s ease-in-out;
+	transition: all 0.25s ease-in-out;
+}
+
+ul.team-icon li a{
+	margin: 0;
+	display: inline-block;
+	padding: 8px 8px;
+	width: 34px;
+	height: 34px;
+	font-size: 18px;
+	line-height: 18px;
+	
+	border-radius: 50%;
+	
+}
+
+ul.team-icon li a.facebook{
+	background-color: #4099ff;
+}
+
+.github{
+    background-color: #fff;
+}
+.github-dark{
+    background-color: black;
+}
+
+
+.team-icon li a:hover{
+	
+	-webkit-transition: all 0.25s ease-in-out;
+	-moz-transition: all 0.25s ease-in-out;
+	-ms-transition: all 0.25s ease-in-out;
+	-o-transition: all 0.25s ease-in-out;
+	transition: all 0.25s ease-in-out;
+}
