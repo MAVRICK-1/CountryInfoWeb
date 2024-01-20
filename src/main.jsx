@@ -11,12 +11,12 @@ import Aboutme from './components/AboutMe.jsx'
 
 const router= createBrowserRouter([
   {
-    path: "/",
+    path: "/CountryInfoWeb",
     element: <App />,
     errorElement:<Error/>,
     children:[
       {
-        path:"/",
+        path:"/CountryInfoWeb",
         element:<Home/>
       },
       {
