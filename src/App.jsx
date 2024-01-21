@@ -12,7 +12,6 @@ import ThemeProvider, { ThemeContext } from './contexts/ThemeContextcreateContex
 
 
 const App = () => {
-  
   return (
     <>
       <ThemeProvider>

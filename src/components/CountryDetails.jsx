@@ -2,19 +2,23 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable no-unused-vars */
 /* eslint-disable react/no-unknown-property */
-import { Link, useLocation, useParams } from 'react-router-dom'
-import './CountryDetails.css'
 import { useContext, useEffect, useState } from "react"
+import { Link, useLocation, useParams } from 'react-router-dom'
+//import { ThemeContext } from '../contexts/ThemeContextcreateContext'
+//import useWindowSize from '../hooks/utility'
+import './CountryDetails.css'
 import ShrimmerCountrydetails from './ShrimmerCountrydetails'
-import { ThemeContext } from '../contexts/ThemeContextcreateContext'
+import { useTheme } from "../hooks/useTheme"
+
 
 
 export default function CountryDetails() {
     //const isDark=useOutletContext()
-    const [isDark] =useContext(ThemeContext)
+    const [isDark] =useTheme()
     const [countryData,setData]=useState(null)
     const [Notfound,setNotfound]=useState(<ShrimmerCountrydetails/>)
     const params = useParams()
+    //const windows= useWindowSize()
     const {state}=useLocation()
     const countryName=params.country
     function updatedCountrystate(data){
@@ -96,7 +100,7 @@ export default function CountryDetails() {
             <Link className="back-button" to="/" >
                         <i className="fa-solid fa-arrow-left"></i>&nbsp; Back
                     </Link>
-                    
+                    {/* <h1>{windows.width}x{windows.height}</h1> */}
                     <div className="country-details">
                     <img src={countryData.img} alt="" />
                     <div className="details-text-container">
